@@ -1,0 +1,9 @@
+1 .create folder structure  -> done
+2. create npm project and dependancies
+ -> express
+ -> ejs express-ejs-layouts
+ dev dependancies
+ -> nodemon  -> done
+3. create express server -> server.js  ->done
+4. Git setup and first commit 
+
