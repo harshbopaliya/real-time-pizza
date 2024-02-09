@@ -5,5 +5,9 @@
  dev dependancies
  -> nodemon  -> done
 3. create express server -> server.js  ->done
-4. Git setup and first commit 
-
+4. Git setup and first commit -> done
+5. install laravel mix
+// yarn add larvel-mix -D;
+//npm install laravel-mix --save-dev
+//setup js and scss ->done
+6. install tailwind css -> 

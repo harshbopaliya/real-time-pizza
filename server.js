@@ -6,6 +6,9 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+//assets
+app.use(express.static("public"));
+
 app.get("/", (req, res) => {
   res.render("home");
 });
@@ -18,3 +21,4 @@ app.set("view engine", "ejs");
 app.listen(PORT, () => {
   console.log(`Listening on port  ${PORT}`);
 });
+// cp node_modules/laravel-mix/setup/webpack.mix.js ./
