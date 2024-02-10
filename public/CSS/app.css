@@ -46,3 +46,39 @@ section.hero {
   border-color: #fff;
   color: #fff;
 }
+
+section.cart {
+  background: #f8f8f8;
+}
+section.cart .amount {
+  color: #fe5f1e;
+}
+section.cart .but {
+  background: #fe5f1e;
+  transition: all 0.3s ease-in-out;
+}
+section.cart .but:hover {
+  background: #b23301;
+  border-color: #fff;
+  color: #fff;
+}
+
+section.login {
+  background: #f8f8f8;
+  min-height: calc(100vh - 86px);
+}
+section.login .but2 {
+  background: #fe5f1e;
+  transition: all 0.3s ease-in-out;
+}
+section.login .but2:hover {
+  background: #b23301;
+  border-color: #fff;
+  color: #fff;
+}
+section.login a {
+  color: #fe5f1e;
+}
+section.login a:hover {
+  color: #b23301;
+}

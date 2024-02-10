@@ -48,3 +48,39 @@ section.hero {
     color: $pure;
   }
 }
+
+section.cart {
+  background: $secondary;
+  .amount {
+    color: $primary;
+  }
+  .but {
+    background: $primary;
+    transition: $smooth;
+    &:hover {
+      background: $primary-hover;
+      border-color: $pure;
+      color: $pure;
+    }
+  }
+}
+
+section.login {
+  background: $secondary;
+  min-height: calc(100vh - 86px);
+  .but2 {
+    background: $primary;
+    transition: $smooth;
+    &:hover {
+      background: $primary-hover;
+      border-color: $pure;
+      color: $pure;
+    }
+  }
+  a {
+    color: $primary;
+    &:hover {
+      color: $primary-hover;
+    }
+  }
+}
