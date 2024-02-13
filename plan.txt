@@ -16,6 +16,12 @@
 -order summary 
 empty cart 
 9.move routes to routes files ->done
-10.add to cart functionality -> done
+10.add to cart functionality
+// fetch all pizzas 
+//menu model
+//connect to mongo db
+// session store
+//dependancies
+-mongoose,express-session,connect-mongo,dotenv -> done
 11.
 
