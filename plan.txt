@@ -10,4 +10,12 @@
 // yarn add larvel-mix -D;
 //npm install laravel-mix --save-dev
 //setup js and scss ->done
-6. install tailwind css -> 
+6. install tailwind css -> done
+7. home page->done
+8.create cart page ->done
+-order summary 
+empty cart 
+9.move routes to routes files ->done
+10.add to cart functionality -> done
+11.
+
