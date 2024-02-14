@@ -22,10 +22,10 @@ mongoose
   .catch((e) => console.log("No connection"));
 
 //session store
-const connection = mongoose.connection;
+// const connection = mongoose.connection;
 
 let mongoStore = new MongoStore({
-  mongooseConnection: connection,
+  //mongooseConnection: connection,
   mongoUrl: process.env.MONGO_CONNECTION_URL,
   collection: "sessions",
 });
@@ -46,9 +46,13 @@ app.use(flash());
 
 //assets
 app.use(express.static("public"));
+app.use(express.json());
 
-// Connection URL
-
+//global midddelware
+app.use((req, res, next) =>{
+  res.locals.session = req.session
+  next()
+})
 // Database options
 
 //set Template engine

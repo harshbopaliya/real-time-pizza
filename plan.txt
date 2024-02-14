@@ -24,4 +24,5 @@ empty cart
 //dependancies
 -mongoose,express-session,connect-mongo,dotenv -> done
 11.
+build register crud
 
