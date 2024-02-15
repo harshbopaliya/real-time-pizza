@@ -1,4 +1,5 @@
 const passport = require("passport");
+const local = require("passport-local");
 const User = require("../../models/user");
 const bcrypt = require("bcrypt");
 function authController() {
@@ -78,8 +79,15 @@ function authController() {
         });
     },
     logout(req, res) {
-      req.logout();
-      return res.redirect("/login");
+      req.logout((err) => {
+        // Add a callback function
+        if (err) {
+          // Handle errors gracefully, e.g., using flash messages
+          req.flash("error", "Something went wrong during logout");
+          return res.redirect("/login");
+        }
+        res.redirect("/login"); // Redirect after successful logout
+      });
     },
   };
 }
