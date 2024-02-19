@@ -23,6 +23,9 @@ empty cart
 // session store
 //dependancies
 -mongoose,express-session,connect-mongo,dotenv -> done
-11.
-build register crud
+11.build register crud
+ - express-flash express-session dotenv -> done
+12. build login using passport
+ -passport passport-local express-session  -> done
+13. create order controller and link it server.js 
 
