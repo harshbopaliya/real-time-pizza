@@ -28,4 +28,13 @@ empty cart
 12. build login using passport
  -passport passport-local express-session  -> done
 13. create order controller and link it server.js 
+14. create order controller
+15. order view customer and admin
+16. place order 
+17. status
+18 . admin order page
+19.order tracker
+20.socket connection
+21. deployment
+22 live server
 
