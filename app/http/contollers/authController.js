@@ -3,6 +3,9 @@ const local = require("passport-local");
 const User = require("../../models/user");
 const bcrypt = require("bcrypt");
 function authController() {
+  const _getRedireccUrl = (req) => {
+    return req.user.role === "admin" ? "/admin/orders" : "customer/orders";
+  };
   //factory function
   return {
     //crud controller
@@ -30,7 +33,7 @@ function authController() {
             req.flash("error", info.message);
             return next(err);
           }
-          return res.redirect("/");
+          return res.redirect(_getRedireccUrl(req));
         });
       })(req, res, next);
     },

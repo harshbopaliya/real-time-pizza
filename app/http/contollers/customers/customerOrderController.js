@@ -1,7 +1,7 @@
 //factory function
 const Order = require("../../../models/order");
 const moment = require("moment");
-function orderController() {
+function customerOrderController() {
   return {
     store(req, res) {
       const { phone, address } = req.body;
@@ -38,4 +38,4 @@ function orderController() {
   };
 }
 
-module.exports = orderController;
+module.exports = customerOrderController;
